@@ -1,1 +1,41 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level></diagram>
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>380</x><y>140</y><w>130</w><h>140</h></coordinates><panel_attributes>Fordon
+--
+fabrikat:str
+color:str
+--
+_init_constructor
+set_fabrikat(str)
+get_fabrikat()str
+set_color(str)
+get_color()str
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>340</y><w>100</w><h>140</h></coordinates><panel_attributes>Personbil
+--
+fabrikat:str
+color:str
+bagagevolym:int
+--
+_init_constructor(fabrikat, color, bagagevolym)
+set_bagagevolym(int)
+get_bagagevolym():int
+print_fordon()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>260</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>330</y><w>220</w><h>170</h></coordinates><panel_attributes>Lastbil
+--
+fabrikat:str
+colot:str
+flakvolym:int
+--
+_init_constructor(fabrikat, color, flakvolym)
+set_flakvolym(int)
+get_flakvolym():int
+print_fordon()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>70</x><y>210</y><w>340</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>320;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>70</y><w>150</w><h>170</h></coordinates><panel_attributes>main.py
+--
+looping:boolean
+personbils_lista[Personbil]
+lastbils_lista[Lastbil]
+--
+main()
+print_(fordons_lista)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>230</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+teaches to &gt;</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element></diagram>
